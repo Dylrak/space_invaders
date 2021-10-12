@@ -1,0 +1,35 @@
+﻿<Window
+    x:Class="SpaceInvadersProgrammingSpeedrunAnyPercent.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SpaceInvadersProgrammingSpeedrunAnyPercent"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <Canvas x:Name="gameCanvas">
+            <Canvas.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Images/starry_night.png" />
+            </Canvas.Background>
+        </Canvas>
+        <TextBox
+            x:Name="wonMessage"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="36"
+            Text="You won!"
+            Visibility="Hidden" />
+        <TextBox
+            x:Name="endGameMessage"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="36"
+            Text=""
+            Visibility="Hidden" />
+    </Grid>
+
+
+</Window>
